@@ -12,7 +12,7 @@ public class RSA extends Message {
             if (choice.equalsIgnoreCase("yes")) {
                 run();
                 createCipher();
-                testValues();
+                //testValues();
             }
             else if (choice.equalsIgnoreCase("no")) {
                 end = true;
