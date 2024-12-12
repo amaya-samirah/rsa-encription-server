@@ -15,6 +15,6 @@ INSTRUCTIONS:
 
 #5 Look at 'Server.java' terminal to see results.
 
-#6 To test values enter "test" in 'Client.java' folder
+#6 To test values enter "test" in 'Client.java' file
 
 #7 Repeat OR Stop program
