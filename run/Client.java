@@ -38,6 +38,7 @@ public class Client {
     }
 
     public static void main(String[] args) {
+        System.out.println("Enter a message to encode with no spaces:");
         new Client();
     }
 }

@@ -27,12 +27,13 @@ public class Manager extends Prime {
         generateValues();  // creates values p, q, N, phiN, e
     }
 
-    public static void run() {
-        str("Enter a message to endode with no spaces:");
-        String input = keyboard.nextLine();
+    public static void run(String message) {
+        //str("Enter a message to endode with no spaces:");
+        //String input = keyboard.nextLine();
+        
         
         // convert String input to double values
-        addPlainText(input);
+        addPlainText(message);
         encode(plainText);
         // str("Your encoded message is:");
         // for (int i = 0; i < doubMessage.size(); i++) {

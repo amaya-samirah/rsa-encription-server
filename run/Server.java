@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class Server {
+public class Server extends RSA{
     private ServerSocket server;
     private DataInputStream in;
     public static final int PORT = 8009;
@@ -28,7 +28,9 @@ public class Server {
         Socket clientSocket = server.accept();
         System.out.println("Connected to "+clientSocket.getRemoteSocketAddress());
         in = new DataInputStream(new BufferedInputStream(clientSocket.getInputStream()));
+
         readMessages();
+        
         close();
     }
 
@@ -42,11 +44,24 @@ public class Server {
         while(!line.equals(STOP_STRING)){
             line = in.readUTF();
             userMessage = line;
-            System.out.println(line);
+            //System.out.println(line);
+            //System.out.println(userMessage);
+            init();
+            run(userMessage);
+            //createCipher();
+            str("Your encoded message is :");
+            for (int i = 0; i < intMessage.size(); i++) {
+                System.err.print(""+intMessage.get(i));
+            }
+            str("");
+            reset();
         }
+        
+
     }
 
     public static void main(String[] args) {
         new Server();
+        
     }
 }
