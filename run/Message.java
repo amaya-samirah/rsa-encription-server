@@ -48,20 +48,6 @@ public class Message extends Manager {
         return let;
     }
 
-    public static void testValues() {
-        str("p: "+p);
-        str("q: "+q);
-        str("N: "+N);
-        str("phiN: "+phiN);
-        str("e: "+e);
-
-        str("Your original message was");
-        for (int i = 0; i < plainText.size(); i++) {
-            System.out.print(""+plainText.get(i));
-        }
-         str("");
-    }
-
     public static void reset() {
         plainText = new ArrayList<Double>();
         doubMessage = new ArrayList<Double>();

@@ -1,7 +1,8 @@
 package run;
 
 public class RSA extends Message {
-    
+    public static Test test = new Test();
+
     public static void main(String[] args) {
         str("Welcome to the RSA Encoding Program!");
         init();  // initialization
@@ -12,15 +13,22 @@ public class RSA extends Message {
             if (choice.equalsIgnoreCase("yes")) {
                 run();
                 createCipher();
-                //testValues();
             }
             else if (choice.equalsIgnoreCase("no")) {
+                str("You have exited the program. \nWould you like to test the program? Enter \"yes\" or \"no\".");
+                String input = keyboard.nextLine();
+                if (input.equalsIgnoreCase("yes")) {
+                    test.testValues();
+                }
+                
                 end = true;
             }
             reset();  // resets previously input values
         }
 
-        str("You have exited the program. \nGoodbye!");
+        
+
+        
 
         
     }

@@ -12,6 +12,7 @@ public class Server {
     private DataInputStream in;
     public static final int PORT = 8009;
     public static final String STOP_STRING = "##";
+    public static String userMessage;
 
 
     public Server(){
@@ -40,6 +41,7 @@ public class Server {
         String line = "";
         while(!line.equals(STOP_STRING)){
             line = in.readUTF();
+            userMessage = line;
             System.out.println(line);
         }
     }
