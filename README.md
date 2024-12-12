@@ -2,20 +2,19 @@
 
 Final project for MATH 587. User inputs a numerical message and that message is then encoded using RSA. The program is accessed through a server.
 
-SERVER PART NOT YET ADDED - USE FUNCTIONALITY OF PROGRAM THROUGH CONSOLE
-
-NOT YET ADDED FUNCTION TO ENCRPT LETTER MESSAGES
 
 INSTRUCTIONS:
 
 #1 Open the 'run' folder
 
-#2 Open the 'RSA.java' file
+#2 Open the 'Server.java' file & run
 
-#3 Run the program
+#3 Open the 'Client.java' file & run
 
-#3.1 Enter 'yes'
+#4 Enter all input through in the 'Client.java' terminal
 
-#3.2 Enter a number
+#5 Look at 'Server.java' terminal to see results.
 
-#3.3 Enter 'no' or repeat steps 3.1-3.3
+#6 To test values enter "test" in 'Client.java' folder
+
+#7 Repeat OR Stop program

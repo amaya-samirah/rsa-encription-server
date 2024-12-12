@@ -46,15 +46,21 @@ public class Server extends RSA{
             userMessage = line;
             //System.out.println(line);
             //System.out.println(userMessage);
-            init();
-            run(userMessage);
-            //createCipher();
-            str("Your encoded message is :");
-            for (int i = 0; i < intMessage.size(); i++) {
-                System.err.print(""+intMessage.get(i));
+            if (userMessage.equalsIgnoreCase("test")) {
+                test();
             }
-            str("");
-            reset();
+            else {
+                init();
+                run(userMessage);
+                //createCipher();
+                str("Your encoded message is :");
+                for (int i = 0; i < intMessage.size(); i++) {
+                    System.err.print(""+intMessage.get(i));
+                }
+                str("");
+                reset();  
+            }
+            
         }
         
 

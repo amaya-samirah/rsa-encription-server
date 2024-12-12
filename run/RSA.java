@@ -1,9 +1,11 @@
 package run;
 
 public class RSA extends Message {
-    public static Test test = new Test();
+    public static Test check = new Test();
 
-    
+    public static void test() {
+        check.testValues();
+    }
 
     // public static void main(String[] args) {
     //     str("Welcome to the RSA Encoding Program!");
